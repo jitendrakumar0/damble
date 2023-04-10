@@ -1,6 +1,143 @@
+.bgBlack {
+    background-color: black;
+}
+
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-// [data-page-name=example] {
+[data-page-name=homeSection] {
     @include media-breakpoint(basic) {
+        
+        .registerPage {
+            & .registerForm {
+                & .registerHeading {
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                & .inputFiled {
+                    & .form-control {
+                        border: none;
+                        border-radius: 20px;
+                        background-color: #3a3a3a !important;
+                        color: rgb(219, 219, 219) !important;
+                        height: 50px;
+                        &::placeholder {
+                            color: rgb(219, 219, 219) !important;
+                            font-weight: 500;
+                        }
+                    }
+                    
+                }
+                & .userAgreement {
+                    & .userAgreementIcon{
+                        width: 20px;
+                        height: 20px;
+                        background-color: #00ff11;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100%;
+                        padding: 4px;
+                    }
+                    & .userAgreementText {
+                        color: white;
+                        font-size: 14px;
+                        & a {
+                            color: #00ff11;
+                        }
+                    }
+                }
+                & .RegisteLarge {
+                    color: White;
+                    font-weight: 600 !important;
+                    font-size: 20px;
+                    background-color: #00ff11;
+                    padding: 4px 15px;
+                    border-radius: 50px;
+                    max-width: 200px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .productsSection {
+            & .products {
+                & .productsHeading {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: white;
+                }
+                & .productItem {
+                    & .productsImg {
+                        max-width: 300px;
+                        width: 100%;
+                        margin: auto;
+    
+                    }
+                    & .productText {
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        color: white;
+                        border-radius: 20px;
+                        background-color: #3a3a3a;
+                    }
+                    & .productIcon {
+                        width: 50px;
+                        height: 50px;
+                        margin: -15px auto 0px auto;
+                    }
+                }
+            }
+        }
+        
+
+        .giveAwaySection {
+            margin: 15px 0px;
+            & .giveAway {
+                & .giveAwayImg {
+    
+                }
+                & .greenButton {
+                    color: White;
+                        font-weight: 600 !important;
+                        font-size: 20px;
+                        background-color: #00ff11;
+                        padding: 4px 15px;
+                        border-radius: 50px;
+                        max-width: 200px;
+                        width: 100%;
+                        margin: auto;
+                        text-transform: uppercase;
+                        display: flex;
+                        justify-content: center;
+                }
+            }
+        }
+        
+        .aboutSection {
+            & .aboutUs {
+                & .aboutUsHeading {
+                    font-size: 18px;
+                    color: white;
+                    font-weight: 600;
+                }
+                & .aboutUsMainHeading {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: white;
+                }
+                & .aboutUspara {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: white;
+                }
+                & .aboutUsImg {
+                    margin: auto;
+                    max-width: 200px;
+                }
+            }
+        }
+        
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -19,12 +156,149 @@
 
     @include media-breakpoint-down(xl) {}
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        .productsSection {
+            & .products {
+                & .productsHeading {
+                    font-size: 16px;
+                }
+                & .productItem {
+                    & .productsImg {
+    
+                    }
+                    & .productText {
+                        font-size: 14px;
+                    }
+                    & .productIcon {
+                        width: 40px;
+                        height: 40px;
+                        margin: -16px auto 0px auto;
+                    }
+                }
+            }
+        }
 
-    @include media-breakpoint-down(md) {}
+        .giveAwaySection {
+            & .giveAway {
+                & .giveAwayImg {
+    
+                }
+                & .greenButton {
+                    font-size: 18px;
+                }
+            }
+        }
+        
+        .aboutSection {
+            & .aboutUs {
+                & .aboutUsHeading {
+                    font-size: 18px;
+                }
+                & .aboutUsMainHeading {
+                    font-size: 20px;
+                }
+                & .aboutUspara {
+                    font-size: 13px;
+                }
+                & .aboutUsImg {
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
-// }
+    @include media-breakpoint-down(md) {
+        .productsSection {
+            & .products {
+                & .productsHeading {
+                    font-size: 14px;
+                }
+                & .productItem {
+                    & .productsImg {
+    
+                    }
+                    & .productText {
+                        font-size: 10px;
+                    }
+                    & .productIcon {
+                        width: 30px;
+                        height: 30px;
+                        margin: -10px auto 0px auto;
+                    }
+                }
+            }
+        }
+
+        .giveAwaySection {
+            & .giveAway {
+                & .giveAwayImg {
+    
+                }
+                & .greenButton {
+                    font-size: 12px;
+                    max-width: 150px;
+                }
+            }
+        }
+        
+        .aboutSection {
+            & .aboutUs {
+                & .aboutUsHeading {
+                    font-size: 14px;
+                }
+                & .aboutUsMainHeading {
+                    font-size: 18px;
+                }
+                & .aboutUspara {
+                    font-size: 10px;
+                }
+                & .aboutUsImg {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .productsSection {
+            & .products {
+                & .productsHeading {
+                }
+                & .productItem {
+                    & .productsImg {
+    
+                    }
+                    & .productText {
+                    }
+                    & .productIcon {
+                    }
+                }
+            }
+        }
+
+        .giveAwaySection {
+            & .giveAway {
+                & .giveAwayImg {
+    
+                }
+                & .greenButton {
+                }
+            }
+        }
+        
+        .aboutSection {
+            & .aboutUs {
+                & .aboutUsHeading {
+                }
+                & .aboutUsMainHeading {
+                }
+                & .aboutUspara {
+                }
+                & .aboutUsImg {
+                }
+            }
+        }
+    }
+}
 
 [data-bs-theme=dark] {
     // & [data-page-name=example] {
