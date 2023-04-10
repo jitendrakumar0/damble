@@ -4,7 +4,7 @@
     @include media-breakpoint(basic) {
         .whyGambleOnDambleSection {
             padding: 20px;
-            background-color: black;
+            // background-color: black;
             & .sectionHeading {
                 text-align: start;
                 font-size: 64px;
@@ -37,7 +37,7 @@
         }
         .partnersSection {
             padding: 20px;
-            background-color: black;
+            // background-color: black;
             & .partnersSectionInner {
                 padding-top: 50px;
                 padding-bottom: 50px;
@@ -61,7 +61,7 @@
         }
         .footer {
             padding: 20px 30px 150px 30px;
-            background-color: black;
+            // background-color: black;
             & .imgOuter {
                 height: 50px;
                 margin-bottom: 50px;

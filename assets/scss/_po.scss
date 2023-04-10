@@ -3,7 +3,7 @@
 }
 
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=homeSection] {
+// [data-page-name=homeSection] {
     @include media-breakpoint(basic) {
         
         .registerPage {
@@ -298,7 +298,7 @@
             }
         }
     }
-}
+// }
 
 [data-bs-theme=dark] {
     // & [data-page-name=example] {
