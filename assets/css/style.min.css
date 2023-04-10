@@ -1,1 +1,367 @@
-:root{--topbar-height: 70px;--startbar-width: 300px;--endbar-width: 70px}@font-face{font-family:"Inter";src:local("Inter ExtraBold"),local("Inter-ExtraBold"),url("../fonts/Inter-ExtraBold.woff2") format("woff2"),url("../fonts/Inter-ExtraBold.woff") format("woff");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Black"),local("Inter-Black"),url("../fonts/Inter-Black.woff2") format("woff2"),url("../fonts/Inter-Black.woff") format("woff");font-weight:900;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Bold"),local("Inter-Bold"),url("../fonts/Inter-Bold.woff2") format("woff2"),url("../fonts/Inter-Bold.woff") format("woff");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter SemiBold"),local("Inter-SemiBold"),url("../fonts/Inter-SemiBold.woff2") format("woff2"),url("../fonts/Inter-SemiBold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter ExtraLight"),local("Inter-ExtraLight"),url("../fonts/Inter-ExtraLight.woff2") format("woff2"),url("../fonts/Inter-ExtraLight.woff") format("woff");font-weight:200;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Medium"),local("Inter-Medium"),url("../fonts/Inter-Medium.woff2") format("woff2"),url("../fonts/Inter-Medium.woff") format("woff");font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Regular"),local("Inter-Regular"),url("../fonts/Inter-Regular.woff2") format("woff2"),url("../fonts/Inter-Regular.woff") format("woff");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Light"),local("Inter-Light"),url("../fonts/Inter-Light.woff2") format("woff2"),url("../fonts/Inter-Light.woff") format("woff");font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Thin"),local("Inter-Thin"),url("../fonts/Inter-Thin.woff2") format("woff2"),url("../fonts/Inter-Thin.woff") format("woff");font-weight:100;font-style:normal;font-display:swap}[href*=javascript][target=_blank]{pointer-events:none}a.active[href],a.accordion-button:not(.collapsed){pointer-events:none}[data-scrollbar]>canvas{z-index:1000}body{position:fixed !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;overflow-x:hidden !important;overflow-y:auto !important;outline:0 !important;display:block !important;user-select:none !important;font-family:"Inter" !important}body input,body textarea,body select{user-select:auto}body main{width:100vw !important;max-width:none !important;height:100% !important;margin:0 !important;position:relative !important;overflow:hidden !important;padding:0px !important}body main>.mainInner{height:100% !important;border:0 !important;position:relative !important;display:flex !important;flex-direction:column !important;width:100% !important;outline:0 !important;overflow:hidden !important;margin:0px !important;flex-wrap:nowrap}body main>.mainInner>[data-page-name]{overflow:hidden auto}body .overflow-hidden-auto{overflow:hidden auto !important}body .overflow-auto-hidden{overflow:auto hidden !important}@media(min-width: 768px){*>*{scrollbar-width:thin !important;scrollbar-color:#38434e !important}*>*::-webkit-scrollbar{width:.3em;height:.3em}*>*::-webkit-scrollbar-track{background:rgba(0,0,0,0);border-radius:50em}*>*::-webkit-scrollbar-thumb{background:rgba(173,181,189,0);border-radius:50em}*>*::-webkit-scrollbar-thumb:hover{background:rgba(206,212,218,.6)}*>*>*:hover::-webkit-scrollbar{width:.3em;height:.3em}*>*>*:hover::-webkit-scrollbar-thumb{background:rgba(173,181,189,.1);border-radius:50em}*>*>*:hover::-webkit-scrollbar-thumb:hover{background:rgba(206,212,218,.8)}}body main{background-image:linear-gradient(to right, #000000, #130618)}.topnavBar{height:45px}.topnavBar .linkRow{border-bottom:2px solid #fff}.topnavBar .linkRow .navAnchor{font-size:18px;color:#fff;font-weight:600;opacity:.8;letter-spacing:.6px}.topnavBar .linkRow .navAnchor.active{opacity:1}.heroSection{padding-top:70px}.heroSection .logo{margin-top:20px}.heroSection .logo img{height:60px}.heroSection .heading{font-size:65px;color:#fff;font-weight:700;line-height:80px;margin-top:40px}.heroSection .heading span{color:#ff7b1c}.heroSection .subHeading{font-size:24px;color:#fff;font-weight:600;margin-top:30px}/*# sourceMappingURL=style.min.css.map */
+:root {
+  --topbar-height: 70px;
+  --startbar-width: 300px;
+  --endbar-width: 70px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter ExtraBold"), local("Inter-ExtraBold"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Black"), local("Inter-Black"), url("../fonts/Inter-Black.woff2") format("woff2"), url("../fonts/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Bold"), local("Inter-Bold"), url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter SemiBold"), local("Inter-SemiBold"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter ExtraLight"), local("Inter-ExtraLight"), url("../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../fonts/Inter-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Light"), local("Inter-Light"), url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Thin"), local("Inter-Thin"), url("../fonts/Inter-Thin.woff2") format("woff2"), url("../fonts/Inter-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+[href*=javascript][target=_blank] {
+  pointer-events: none;
+}
+
+a.active[href],
+a.accordion-button:not(.collapsed) {
+  pointer-events: none;
+}
+
+[data-scrollbar] > canvas {
+  z-index: 1000;
+}
+
+body {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  outline: 0 !important;
+  display: block !important;
+  user-select: none !important;
+  font-family: "Inter" !important;
+}
+body input, body textarea, body select {
+  user-select: auto;
+}
+body main {
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100% !important;
+  margin: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 0px !important;
+}
+body main > .mainInner {
+  height: 100% !important;
+  border: 0 !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  outline: 0 !important;
+  overflow: hidden !important;
+  margin: 0px !important;
+  flex-wrap: nowrap;
+}
+body main > .mainInner > [data-page-name] {
+  overflow: hidden auto;
+}
+body .overflow-hidden-auto {
+  overflow: hidden auto !important;
+}
+body .overflow-auto-hidden {
+  overflow: auto hidden !important;
+}
+
+@media (min-width: 768px) {
+  * > * {
+    scrollbar-width: thin !important;
+    scrollbar-color: #38434e !important;
+  }
+  * > *::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+  * > *::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 50em;
+  }
+  * > *::-webkit-scrollbar-thumb {
+    background: rgba(173, 181, 189, 0);
+    border-radius: 50em;
+  }
+  * > *::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 212, 218, 0.6);
+  }
+  * > * > *:hover::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+  * > * > *:hover::-webkit-scrollbar-thumb {
+    background: rgba(173, 181, 189, 0.1);
+    border-radius: 50em;
+  }
+  * > * > *:hover::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 212, 218, 0.8);
+  }
+}
+body main {
+  background-image: linear-gradient(to right, #000000, #130618);
+}
+
+.topnavBar {
+  height: 45px;
+}
+.topnavBar .linkRow {
+  border-bottom: 2px solid white;
+}
+.topnavBar .linkRow .navAnchor {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  opacity: 0.8;
+  letter-spacing: 0.6px;
+}
+.topnavBar .linkRow .navAnchor.active {
+  opacity: 1;
+}
+
+.heroSection {
+  padding-top: 70px;
+}
+.heroSection .logo {
+  margin-top: 20px;
+}
+.heroSection .logo img {
+  height: 60px;
+}
+.heroSection .heading {
+  font-size: 65px;
+  color: white;
+  font-weight: 700;
+  line-height: 80px;
+  margin-top: 40px;
+}
+.heroSection .heading span {
+  color: #ff7b1c;
+}
+.heroSection .subHeading {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.bgBlack {
+  background-color: black;
+}
+
+[data-page-name=homeSection] .registerPage .registerForm .registerHeading {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+[data-page-name=homeSection] .registerPage .registerForm .inputFiled .form-control {
+  border: none;
+  border-radius: 20px;
+  background-color: #3a3a3a !important;
+  color: rgb(219, 219, 219) !important;
+  height: 50px;
+}
+[data-page-name=homeSection] .registerPage .registerForm .inputFiled .form-control::placeholder {
+  color: rgb(219, 219, 219) !important;
+  font-weight: 500;
+}
+[data-page-name=homeSection] .registerPage .registerForm .userAgreement .userAgreementIcon {
+  width: 20px;
+  height: 20px;
+  background-color: #00ff11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 4px;
+}
+[data-page-name=homeSection] .registerPage .registerForm .userAgreement .userAgreementText {
+  color: white;
+  font-size: 14px;
+}
+[data-page-name=homeSection] .registerPage .registerForm .userAgreement .userAgreementText a {
+  color: #00ff11;
+}
+[data-page-name=homeSection] .registerPage .registerForm .RegisteLarge {
+  color: White;
+  font-weight: 600 !important;
+  font-size: 20px;
+  background-color: #00ff11;
+  padding: 4px 15px;
+  border-radius: 50px;
+  max-width: 200px;
+  width: 100%;
+}
+[data-page-name=homeSection] .productsSection .products .productsHeading {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+[data-page-name=homeSection] .productsSection .products .productItem .productsImg {
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+}
+[data-page-name=homeSection] .productsSection .products .productItem .productText {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  background-color: #3a3a3a;
+}
+[data-page-name=homeSection] .productsSection .products .productItem .productIcon {
+  width: 50px;
+  height: 50px;
+  margin: -15px auto 0px auto;
+}
+[data-page-name=homeSection] .giveAwaySection {
+  margin: 15px 0px;
+}
+[data-page-name=homeSection] .giveAwaySection .giveAway .greenButton {
+  color: White;
+  font-weight: 600 !important;
+  font-size: 20px;
+  background-color: #00ff11;
+  padding: 4px 15px;
+  border-radius: 50px;
+  max-width: 200px;
+  width: 100%;
+  margin: auto;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+[data-page-name=homeSection] .aboutSection .aboutUs .aboutUsHeading {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+[data-page-name=homeSection] .aboutSection .aboutUs .aboutUsMainHeading {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+[data-page-name=homeSection] .aboutSection .aboutUs .aboutUspara {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+[data-page-name=homeSection] .aboutSection .aboutUs .aboutUsImg {
+  margin: auto;
+  max-width: 200px;
+}
+@media (max-width: 991.98px) {
+  [data-page-name=homeSection] .productsSection .products .productsHeading {
+    font-size: 16px;
+  }
+  [data-page-name=homeSection] .productsSection .products .productItem .productText {
+    font-size: 14px;
+  }
+  [data-page-name=homeSection] .productsSection .products .productItem .productIcon {
+    width: 40px;
+    height: 40px;
+    margin: -16px auto 0px auto;
+  }
+  [data-page-name=homeSection] .giveAwaySection .giveAway .greenButton {
+    font-size: 18px;
+  }
+  [data-page-name=homeSection] .aboutSection .aboutUs .aboutUsHeading {
+    font-size: 18px;
+  }
+  [data-page-name=homeSection] .aboutSection .aboutUs .aboutUsMainHeading {
+    font-size: 20px;
+  }
+  [data-page-name=homeSection] .aboutSection .aboutUs .aboutUspara {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767.98px) {
+  [data-page-name=homeSection] .productsSection .products .productsHeading {
+    font-size: 14px;
+  }
+  [data-page-name=homeSection] .productsSection .products .productItem .productText {
+    font-size: 10px;
+  }
+  [data-page-name=homeSection] .productsSection .products .productItem .productIcon {
+    width: 30px;
+    height: 30px;
+    margin: -10px auto 0px auto;
+  }
+  [data-page-name=homeSection] .giveAwaySection .giveAway .greenButton {
+    font-size: 12px;
+    max-width: 150px;
+  }
+  [data-page-name=homeSection] .aboutSection .aboutUs .aboutUsHeading {
+    font-size: 14px;
+  }
+  [data-page-name=homeSection] .aboutSection .aboutUs .aboutUsMainHeading {
+    font-size: 18px;
+  }
+  [data-page-name=homeSection] .aboutSection .aboutUs .aboutUspara {
+    font-size: 10px;
+  }
+  [data-page-name=homeSection] .aboutSection .aboutUs .aboutUsImg {
+    width: 150px;
+  }
+}/*# sourceMappingURL=style.min.css.map */

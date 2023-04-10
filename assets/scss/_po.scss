@@ -68,8 +68,9 @@
                 }
                 & .productItem {
                     & .productsImg {
+                        max-width: 300px;
                         width: 100%;
-                        // height: 200px;
+                        margin: auto;
     
                     }
                     & .productText {
