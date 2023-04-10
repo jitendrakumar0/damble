@@ -1,5 +1,53 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
     @include media-breakpoint(basic) {
+        body main {
+            background-image: linear-gradient(to right, #000000, #130618);
+            // background-color: #130618;
+        }
+        .topnavBar {
+            height: 45px;
+            & .linkRow {
+                border-bottom: 2px solid white;
+                & .navAnchor {
+                    font-size: 18px;
+                    color: white;
+                    font-weight: 600;
+                    opacity: 0.8;
+                    letter-spacing: 0.6px;
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .heroSection {
+            padding-top: 70px;
+            & .logo {
+                margin-top: 20px;
+                & img {
+                    height: 60px;
+                }
+            }
+            & .heading {
+                font-size: 65px;
+                color: white;
+                font-weight: 700;
+                line-height: 80px;
+                margin-top: 40px;
+                & span {
+                    color: #ff7b1c;
+                }
+            }
+            & .subHeading {
+                font-size: 24px;
+                color: white;
+                font-weight: 600;
+                margin-top: 30px;
+            }
+            & .registerTxt {}
+            & .priceTxt {}
+            & .registerBtn {}
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
