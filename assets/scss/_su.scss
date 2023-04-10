@@ -53,6 +53,10 @@
                 border: none !important;
                 border-radius: 2rem;
                 overflow: hidden;
+                height: 190px;
+                & img {
+                    object-fit: cover;
+                }
             }
         }
         .footer {
