@@ -79,8 +79,17 @@
                         text-align: center;
                         color: white;
                         border-radius: 20px;
-                        background-color: #3a3a3a;
+                        // background-color: #3a3a3a;
                         padding: 44px !important;
+                        &.prodcutBg1 {
+                            background-image: linear-gradient(to top, #040404, #3a3a3a);
+                        }
+                        &.prodcutBg2 {
+                            background-image: linear-gradient(to top, #09030b, #3a3a3a);
+                        }
+                        &.prodcutBg3 {
+                            background-image: linear-gradient(to top, #120516, #3a3a3a);
+                        }
                     }
                     & .productIcon {
                         width: 70px;
@@ -101,16 +110,20 @@
                 & .greenButton {
                     color: White;
                         font-weight: 600 !important;
-                        font-size: 26px;
+                        font-size: 30px;
                         background-color: #00ff11;
                         padding: 10px 15px;
                         border-radius: 50px;
-                        max-width: 340px;
+                        max-width: 390px;
                         width: 100%;
                         margin: auto;
                         text-transform: uppercase;
                         display: flex;
                         justify-content: center;
+                        &:is(:hover, :active, :focus) {
+                            background-image: linear-gradient(to right, #2b9301, #2b9301);
+                            color: white;
+                        }
                 }
             }
         }
