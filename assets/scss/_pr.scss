@@ -6,6 +6,9 @@
         }
         .topnavBar {
             height: 45px;
+            &.nav-active {
+                background-image: linear-gradient(to right, #000000, #130618);
+            }
             & .linkRow {
                 border-bottom: 2px solid white;
                 & .navAnchor {
@@ -16,6 +19,16 @@
                     letter-spacing: 0.6px;
                     &.active {
                         opacity: 1;
+                    }
+                }
+                & .mobLogo {
+                    & img {
+                        height: 30px;
+                    }
+                }
+                & .menuIcon {
+                    & img {
+                        height: 12px;
                     }
                 }
             }
@@ -44,9 +57,150 @@
                 font-weight: 600;
                 margin-top: 30px;
             }
-            & .registerTxt {}
-            & .priceTxt {}
-            & .registerBtn {}
+            & .registerTxt {
+                font-size: 26px;
+                color: white;
+                font-weight: 600;
+                & span {
+                    color: #17f026;
+                }
+            }
+            & .priceTxt {
+                font-size: 74px;
+                line-height: 70px;
+                color: #17f026;
+                font-weight: 700;
+                text-shadow: 1px 1px 8px #17f026;
+            }
+            & .registerBtn {
+                margin-top: 10px;
+                background-image: linear-gradient(to right, #2b9301, #80ff00);
+                font-size: 24px;
+                color: white;
+                font-weight: 600;
+                border-radius: 40px;
+                padding: 8px 24px;
+                border: 0;
+                box-shadow: 1px 1px 5px 1px #80ff00;
+                transition: 0.3s ease-in-out;
+                &:is(:hover, :active, :focus) {
+                    background-image: linear-gradient(to right, #2b9301, #2b9301);
+                    color: white;
+                }
+            }
+            & .animationBtn {
+                margin-top: 30px;
+                position: relative;
+                & span {
+                    display: block;
+                    width: 1.2em; 
+                    height: 1.2em;
+                    background-color: transparent; 
+                    border-width: 0 0.3em 0.3em 0; 
+                    border-style: solid; 
+                    border-color: #17f026; 
+                    border-radius: 2px;
+                    animation: scrolldown 2s ease-in-out infinite;
+                    transform: translateY(0%) rotate(45deg);
+                    position: absolute;
+                    left: 50%;
+                    &:last-child {
+                        animation-delay: 0.06s;
+                        top: 12.5px;
+                    }
+                    &:nth-child(2) {
+                        animation-delay: 0.03s;
+                        top: 25px;
+                    }
+                }
+                @keyframes scrolldown {
+                    0%{
+                        transform: translateY(-10px) rotate(45deg);
+                    }
+                    50%{
+                        transform: translateY(0) rotate(45deg);
+                    }
+                    100%{
+                        transform: translateY(-10px) rotate(45deg);
+                    }
+                }
+            }
+        }
+        .menuOffcanvas {
+            width: 280px !important;
+            background-image: linear-gradient(to right, #000000, #130618);
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & img {
+                        height: 30px;
+                    }
+                }
+                & .btn-close {
+                    background-size: 0.8em;
+                    background-image: url(./../img/crossIcon.svg) !important;
+                }
+            }
+            & .offcanvas-body {
+                padding-top: 0;
+                    & .offcanvasLink {
+                        padding: 6px 0px;
+                        & .offcanvasAnchor {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: #ffffff;
+                            transition: 0.3s ease;
+                            letter-spacing: 0.1em;
+                        }
+                    }
+            }
+        }
+        .topBtn {  
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            z-index: 8;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            & span {
+            display: block;
+            width: 1.2em; 
+            height: 1.2em;
+            background-color: transparent; 
+            border-width: 0.3em 0em 0em 0.3em; 
+            border-style: solid; 
+            border-color: #767377; 
+            border-radius: 2px;
+            animation: scrolldown 2s ease-in-out infinite;
+            transform: translateY(0%) rotate(45deg);
+            position: absolute;
+            left: 50%;
+            &:last-child {
+                animation-delay: 0.06s;
+                top: 12.5px;
+            }
+            &:nth-child(2) {
+                animation-delay: 0.03s;
+                top: 25px;
+            }
+        }
+        @keyframes scrolldown {
+            0%{
+                transform: translateY(-10px) rotate(45deg);
+            }
+            50%{
+                transform: translateY(0) rotate(45deg);
+            }
+            100%{
+                transform: translateY(-10px) rotate(45deg);
+            }
+        }
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
         }
     }
 
@@ -63,18 +217,295 @@
 
 
     @include media-breakpoint-down(xxl) {
+        
+        .topnavBar {
+            & .linkRow {
+                & .navAnchor {
+                    &.active {
+                    }
+                }
+                & .mobLogo {
+                    & img {
+                    }
+                }
+                & .menuIcon {
+                    & img {
+                    }
+                }
+            }
+        }
+        .heroSection {
+            & .logo {
+                & img {
+                    height: 50px;
+                }
+            }
+            & .heading {
+                font-size: 55px;
+                line-height: 65px;
+                margin-top: 30px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 22px;
+                margin-top: 20px;
+            }
+            & .registerTxt {
+                font-size: 24px;
+                & span {
+                }
+            }
+            & .priceTxt {
+                font-size: 65px;
+                line-height: 60px;
+            }
+            & .registerBtn {
+                font-size: 22px;
+                &:is(:hover, :active, :focus) {
+                }
+            }
+            & .animationBtn {
+                & span {
+                    &:last-child {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
+        .topnavBar {
+            & .linkRow {
+                & .navAnchor {
+                    &.active {
+                    }
+                }
+                & .mobLogo {
+                    & img {
+                    }
+                }
+                & .menuIcon {
+                    & img {
+                    }
+                }
+            }
+        }
+        .heroSection {
+            & .logo {
+                & img {
+                }
+            }
+            & .heading {
+                font-size: 46px;
+                line-height: 54px;
+                & span {
+                }
+            }
+            & .subHeading {
+            }
+            & .registerTxt {
+                font-size: 22px;
+                margin-top: 30px;
+                & span {
+                }
+            }
+            & .priceTxt {
+                font-size: 60px;
+            }
+            & .registerBtn {
+                font-size: 20px;
+                &:is(:hover, :active, :focus) {
+                }
+            }
+            & .animationBtn {
+                & span {
+                    &:last-child {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
+        .topnavBar {
+            & .linkRow {
+                & .navAnchor {
+                    font-size: 16px;
+                    &.active {
+                    }
+                }
+                & .mobLogo {
+                    & img {
+                    }
+                }
+                & .menuIcon {
+                    & img {
+                    }
+                }
+            }
+        }
+        .heroSection {
+            height: auto !important;
+            & .logo {
+                margin-top: 30px;
+                text-align: center;
+                & img {
+                    height: 40px;
+                }
+            }
+            & .heading {
+                text-align: center;
+                font-size: 38px;
+                line-height: 42px;
+                margin-top: 20px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 20px;
+                text-align: center;
+            }
+            & .registerTxt {
+                margin-top: 10px;
+                & span {
+                }
+            }
+            & .priceTxt {
+            }
+            & .registerBtn {
+                &:is(:hover, :active, :focus) {
+                }
+            }
+            & .animationBtn {
+                & span {
+                    &:last-child {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(md) {
+        .topnavBar {
+            height: 50px;
+            & .linkRow {
+                border-bottom: 1px solid white;
+                & .navAnchor {
+                    &.active {
+                    }
+                }
+                & .mobLogo {
+                    & img {
+                    }
+                }
+                & .menuIcon {
+                    & img {
+                    }
+                }
+            }
+        }
+        .heroSection {
+            padding-bottom: 50px;
+            & .logo {
+                & img {
+                }
+            }
+            & .heading {
+                font-size: 34px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            & .registerTxt {
+                font-size: 20px;
+                margin-top: 0;
+                & span {
+                }
+            }
+            & .priceTxt {
+                font-size: 55px;
+            }
+            & .registerBtn {
+                font-size: 18px;
+                &:is(:hover, :active, :focus) {
+                }
+            }
+            & .animationBtn {
+                & span {
+                    &:last-child {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
+        .topnavBar {
+            & .linkRow {
+                & .navAnchor {
+                    &.active {
+                    }
+                }
+                & .mobLogo {
+                    & img {
+                    }
+                }
+                & .menuIcon {
+                    & img {
+                    }
+                }
+            }
+        }
+        .heroSection {
+            & .logo {
+                & img {
+                    height: 40px;
+                }
+            }
+            & .heading {
+                font-size: 26px;
+                line-height: 30px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            & .registerTxt {
+                font-size: 16px;
+                & span {
+                }
+            }
+            & .priceTxt {
+                font-size: 32px;
+            }
+            & .registerBtn {
+                font-size: 14px;
+                &:is(:hover, :active, :focus) {
+                }
+            }
+            & .animationBtn {
+                & span {
+                    &:last-child {
+                    }
+                    &:nth-child(2) {
+                    }
+                }
+            }
+        }
     }
 
 

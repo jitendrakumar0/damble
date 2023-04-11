@@ -1,6 +1,82 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
+  
     @include media-breakpoint(basic) {
+        .whyGambleOnDambleSection {
+            padding: 20px;
+            // background-color: black;
+            & .sectionHeading {
+                text-align: start;
+                font-size: 64px;
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            & .whyCardOuter {
+                & .whyCardInner {
+                    gap: 40px;
+                    & .whyCard {
+                        & img {
+                            object-fit: contain;
+                        }
+                        & .cardHeadig {
+                            font-size: 35px;
+                            font-weight: 500;
+                            color: #fe7a1c;
+                        }
+                        & .cardText {
+                            & span {
+                                font-size: 27px;
+                                font-weight: 300;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .partnersSection {
+            padding: 20px;
+            // background-color: black;
+            & .partnersSectionInner {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            & .sectionHeading {
+                padding-left: 50px;
+                font-size: 52px;
+                font-weight: 600;
+                color: #fff;
+                text-align: left;
+            }
+            & .card {
+                border: none !important;
+                border-radius: 2rem;
+                overflow: hidden;
+                height: 190px;
+                & img {
+                    object-fit: cover;
+                }
+            }
+        }
+        .footer {
+            padding: 20px 30px 150px 30px;
+            // background-color: black;
+            & .imgOuter {
+                height: 50px;
+                margin-bottom: 50px;
+            }
+            & .footerText {
+                color: #fff;
+                font-size: 25px;
+                font-weight: 500;
+                text-align: center;
+                border: 2px solid #fff;
+                border-radius: 80px;
+                background-color: #29262a;
+                padding: 15px;
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
