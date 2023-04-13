@@ -71,6 +71,9 @@
                         // max-width: 300px;
                         width: 100%;
                         margin: auto;
+                        & .tiltImg {
+                            transform: rotate(-7deg);
+                        }
     
                     }
                     & .productText {
@@ -78,9 +81,21 @@
                         font-weight: 400;
                         text-align: center;
                         color: white;
-                        border-radius: 20px;
-                        background-color: #3a3a3a;
-                        padding: 44px !important;
+                        border-radius: 60px;
+                        // background-color: #3a3a3a;
+                        padding: 38px !important;
+                        & span {
+                            color: #ff7b1c;
+                        }
+                        &.prodcutBg1 {
+                            background-image: linear-gradient(to top, #040404, #3a3a3a);
+                        }
+                        &.prodcutBg2 {
+                            background-image: linear-gradient(to top, #09030b, #3a3a3a);
+                        }
+                        &.prodcutBg3 {
+                            background-image: linear-gradient(to top, #120516, #3a3a3a);
+                        }
                     }
                     & .productIcon {
                         width: 70px;
@@ -101,16 +116,20 @@
                 & .greenButton {
                     color: White;
                         font-weight: 600 !important;
-                        font-size: 26px;
-                        background-color: #00ff11;
+                        font-size: 30px;
+                        background-color: #17f026;
                         padding: 10px 15px;
                         border-radius: 50px;
-                        max-width: 340px;
+                        max-width: 390px;
                         width: 100%;
                         margin: auto;
                         text-transform: uppercase;
                         display: flex;
                         justify-content: center;
+                        &:is(:hover, :active, :focus) {
+                            background-image: linear-gradient(to right, #2b9301, #2b9301);
+                            color: white;
+                        }
                 }
             }
         }
@@ -128,7 +147,7 @@
                     color: white;
                 }
                 & .aboutUspara {
-                    font-size: 26px;
+                    font-size: 24px;
                     font-weight: 400;
                     color: white;
                 }
@@ -207,7 +226,8 @@
                     }
                     & .productText {
                         padding: 30px !important;
-                        font-size: 16px;
+                        font-size: 18px;
+                        border-radius: 40px;
                     }
                     & .productIcon {
                         width: 50px;
@@ -234,7 +254,7 @@
                     font-size: 26px;
                 }
                 & .aboutUsMainHeading {
-                    font-size: 44px;
+                    font-size: 54px;
                 }
                 & .aboutUspara {
                     font-size: 16px;
@@ -256,7 +276,9 @@
     
                     }
                     & .productText {
-                        font-size: 14px;
+                        font-size: 16px;
+                        border-radius: 35px;
+                        padding: 20px;
                     }
                     & .productIcon {
                         width: 40px;
@@ -274,6 +296,7 @@
                 }
                 & .greenButton {
                     font-size: 18px;
+                    max-width: 290px;
                 }
             }
         }
@@ -284,10 +307,10 @@
                     font-size: 20px;
                 }
                 & .aboutUsMainHeading {
-                    font-size: 34px;
+                    font-size: 40px;
                 }
                 & .aboutUspara {
-                    font-size: 13px;
+                    font-size: 18px;
                 }
                 & .aboutUsImg {
                     max-width: 200px;
@@ -301,20 +324,24 @@
         .productsSection {
             & .products {
                 & .productsHeading {
-                    font-size: 14px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    text-align: center;
                 }
                 & .productItem {
                     & .productsImg {
     
                     }
                     & .productText {
-                        font-size: 12px;
-                        padding: 15px !important;
+                        font-size: 16px;
+                        border-radius: 26px;
+                        padding: 25px !important;
                     }
                     & .productIcon {
-                        width: 30px;
-                        height: 30px;
-                        margin: -10px auto 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        margin: -20px auto 0px auto;
                     }
                 }
             }
@@ -326,8 +353,8 @@
     
                 }
                 & .greenButton {
-                    font-size: 12px;
-                    max-width: 150px;
+                    font-size: 18px;
+                    max-width: 180px;
                 }
             }
         }
@@ -335,13 +362,15 @@
         .aboutSection {
             & .aboutUs {
                 & .aboutUsHeading {
-                    font-size: 14px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: center;
                 }
                 & .aboutUsMainHeading {
-                    font-size: 28px;
+                    font-size: 32px;
                 }
                 & .aboutUspara {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 & .aboutUsImg {
                     width: 150px;
@@ -373,6 +402,8 @@
     
                 }
                 & .greenButton {
+                    font-size: 14px;
+                    max-width: 150px;
                 }
             }
         }
@@ -382,7 +413,6 @@
                 & .aboutUsHeading {
                 }
                 & .aboutUsMainHeading {
-                    font-size: 22px;
                 }
                 & .aboutUspara {
                 }

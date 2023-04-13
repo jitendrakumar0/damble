@@ -1,90 +1,90 @@
 @include media-breakpoint(basic) {
-  @font-face {
-    font-family: 'Inter';
-    src: local('Inter ExtraBold'), local('Inter-ExtraBold'),
-        url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Inter-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
 @font-face {
-    font-family: 'Inter';
-    src: local('Inter Black'), local('Inter-Black'),
-        url('../fonts/Inter-Black.woff2') format('woff2'),
-        url('../fonts/Inter-Black.woff') format('woff');
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display HeavyItalic'), local('SFProDisplay-HeavyItalic'),
+        url('../fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-HeavyItalic.woff') format('woff');
     font-weight: 900;
-    font-style: normal;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: local('Inter Bold'), local('Inter-Bold'),
-        url('../fonts/Inter-Bold.woff2') format('woff2'),
-        url('../fonts/Inter-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Black Italic'), local('SFProDisplay-BlackItalic'),
+        url('../fonts/SFProDisplay-BlackItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: local('Inter SemiBold'), local('Inter-SemiBold'),
-        url('../fonts/Inter-SemiBold.woff2') format('woff2'),
-        url('../fonts/Inter-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: local('Inter ExtraLight'), local('Inter-ExtraLight'),
-        url('../fonts/Inter-ExtraLight.woff2') format('woff2'),
-        url('../fonts/Inter-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: local('Inter Medium'), local('Inter-Medium'),
-        url('../fonts/Inter-Medium.woff2') format('woff2'),
-        url('../fonts/Inter-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: local('Inter Regular'), local('Inter-Regular'),
-        url('../fonts/Inter-Regular.woff2') format('woff2'),
-        url('../fonts/Inter-Regular.woff') format('woff');
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: local('Inter Light'), local('Inter-Light'),
-        url('../fonts/Inter-Light.woff2') format('woff2'),
-        url('../fonts/Inter-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display UltralightItalic'), local('SFProDisplay-UltralightItalic'),
+        url('../fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-UltralightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display ThinItalic'), local('SFProDisplay-ThinItalic'),
+        url('../fonts/SFProDisplay-ThinItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display LightItalic'), local('SFProDisplay-LightItalic'),
+        url('../fonts/SFProDisplay-LightItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-LightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: local('Inter Thin'), local('Inter-Thin'),
-        url('../fonts/Inter-Thin.woff2') format('woff2'),
-        url('../fonts/Inter-Thin.woff') format('woff');
-    font-weight: 100;
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display SemiboldItalic'), local('SFProDisplay-SemiboldItalic'),
+        url('../fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
@@ -138,7 +138,7 @@
     outline: 0 !important;
     display: block !important;
     user-select: none !important;
-    font-family: 'Inter' !important;
+    font-family: 'SF Pro Display' !important;
 
     & input,
     & textarea,
