@@ -111,7 +111,9 @@
             margin: 15px 0px;
             & .giveAway {
                 & .giveAwayImg {
-    
+                    & video {
+                        mix-blend-mode: screen;
+                    }
                 }
                 & .greenButton {
                     color: White;
